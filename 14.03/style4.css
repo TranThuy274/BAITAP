@@ -1,0 +1,15 @@
+html{
+    font-size: 16px;
+}
+
+#box{
+    font-size: 16px;
+    width: 8em;
+    background-color: blue;
+}
+
+#child{
+    width: 4em;
+    height: 4em;
+    background-color: red;
+}
