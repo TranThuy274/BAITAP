@@ -15,7 +15,7 @@ if (isset($_POST['id']) && isset($_POST['ten']) && isset($_POST['giatien']) && i
         $nhacungcap = $_POST['nhacungcap'];
         $ngaytao = $_POST['ngaytao'];
 
-        $sqlUpdate = "UPDATE sanpham SET ten='$ten',giatien=$giatien,tonkho=$tonkho, nhacungcap='$nhacungcap', ngaytao=$ngaytao WHERE id = " . (int) $_POST['id'];
+        $sqlUpdate = "UPDATE sanpham SET ten='$ten',giatien='$giatien',tonkho='$tonkho', nhacungcap='$nhacungcap', ngaytao='$ngaytao' WHERE id = " . (int) $_POST['id'];
         if(mysqli_query($connection, $sqlUpdate)){
             echo "Update thành công";
             /**
